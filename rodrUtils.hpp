@@ -53,11 +53,14 @@ namespace rodr
         }
     }
 
+
+    constexpr size_t COLUMN_TAGS_MAP_SIZE = 3;
     //map for filtering feedback columns
-    const std::map<const char*, int> ColmumnMap = {
-        {"time", 0},
-        {"pos", 1},
-        {"hum", 2}
+    //index is the column number and value is the tag
+    constexpr const char* ColumnTagsMap[COLUMN_TAGS_MAP_SIZE] = {
+        "time",
+        "pos",
+        "hum"
     };
 
 }
